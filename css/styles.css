@@ -36,6 +36,9 @@ a:hover {
   color: var(--magenta);
   text-decoration: none;
 }
+
+/* Style for the Nav bar */
+
 nav {
   font-family: var(--mono);
   font-size: 80%;
@@ -50,7 +53,6 @@ nav [class*="fa-"]:hover {
 }
 nav h1 [class*="fa-"] {
   font-size: 100%
-}
 }
 nav h1 a {
   font-family: var(--sans);
@@ -96,6 +98,9 @@ nav a:hover {
 .button:hover {
   color: var(--white);
 }
+
+/* Style for the Introduction section */
+
 #intro {
   padding-bottom: 10rem;
   padding-left: 2rem;
@@ -117,12 +122,18 @@ nav a:hover {
   font-size: 4rem;
   font-weight: normal;
 }
+
+/* Style for the Contact bar */
+
 #contact {
   background-color: var(--blue);
   text-align: center;
   padding: 1rem;
   margin: 0 auto;
 }
+
+/* Style for the Footer */
+
 footer {
   background-color: var(--dkblue);
   text-align: center;
