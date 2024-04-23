@@ -102,8 +102,9 @@ nav a:hover {
 /* Style for the Introduction section */
 
 #intro {
-  padding-bottom: 10rem;
-  padding-left: 2rem;
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 #intro p {
   font-size: 1rem;
@@ -131,12 +132,20 @@ nav a:hover {
   padding: 1rem;
   margin: 0 auto;
 }
+#contact .button {
+    background-color: var(--magenta);
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: var(--mono);
+}
 
 /* Style for the Footer */
 
 footer {
   background-color: var(--dkblue);
   text-align: center;
+  padding: 4rem 0;
 }
 footer h2 {
   padding: 1rem;
