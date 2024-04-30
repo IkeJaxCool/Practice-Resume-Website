@@ -1,173 +1,254 @@
 :root {
-    --black: #171321;
-    --dkblue: #11162b;
-    --blue: #3c4363;
-    --lightblue: #2bddff;
-    --gold: #ffc100;
-    --magenta: #f527a9;
-    --white: #fff9e9;
-    --font-size: 1.3rem;
-    --mono: "Oxygen mono", monospace;
-    --sans: Oxygen, sans-serif;
+  --black: #171321;
+  --dkblue: #11162b;
+  --blue: #3c4363;
+  --lightblue: #5687a6;
+  --gold: #ffc100;
+  --magenta: #f527a9;
+  --white: #fff9e9;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
 }
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 body {
-  padding: 0;
-  margin: 0;
-  font-family: var(--sans);
-  background-color: var(--dkblue);
-  color: var(--white);
-  font-size: var(--font-size);
+padding: 0;
+margin: 0;
+font-family: var(--sans);
+background-color: var(--dkblue);
+color: var(--white);
+font-size: var(--font-size);
 }
 h1,h2,h3 {
-  margin: 0;
+margin: 0;
 }
+img {
+width: 100%;
+}
+
+/* Links */
+
 a {
-  color: var(--gold);
+color: var(--gold);
 }
 a:hover {
-  color: var(--magenta);
-  text-decoration: none;
+color: var(--magenta);
+text-decoration: none;
 }
 
 /* Background color divs */
 
+.section-lightblue {
+background-color: var(--lightblue);
+}
 .section-blue {
-  background-color: var(--blue);
+background-color: var(--blue);
 }
 .gradient {
-  background: linear-gradient(90deg, rgba(255,193,0,1) 68%, rgba(255,255,255,1) 78%, rgba(255,193,0,1) 88%);
-  height: 2px;
+background: linear-gradient(90deg, rgba(255,193,0,1) 68%, rgba(255,255,255,1) 78%, rgba(255,193,0,1) 88%);
+height: 2px;
 }
 
 /* Style for the Nav bar */
 
 nav {
-  font-family: var(--mono);
-  font-size: 80%;
-  padding: 1rem;
+font-family: var(--mono);
+font-size: 80%;
+padding: 1rem;
 }
 nav [class*="fa-"] {
-  font-size: 150%;
-  color: var(--lightblue);
+font-size: 150%;
+color: var(--lightblue);
 }
 nav [class*="fa-"]:hover {
-  color: var(--magenta)
+color: var(--magenta)
 }
 nav h1 [class*="fa-"] {
-  font-size: 100%
+font-size: 100%
 }
 nav h1 a {
-  font-family: var(--sans);
+font-family: var(--sans);
 }
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+gap: 2rem;
 }
 nav li:first-child {
-  flex-basis: 100%;
-  text-align: center;
+flex-basis: 100%;
+text-align: center;
 }
 @media(min-width: 850px){
-  nav {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  nav li:first-child{
-    flex-basis: auto;
-    text-align: left;
-    margin-right: auto;
-  }
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav li:first-child{
+  flex-basis: auto;
+  text-align: left;
+  margin-right: auto;
+}
 }
 nav a {
-  color: var(--gold);
-  text-decoration: none;
-  display: block;
+color: var(--gold);
+text-decoration: none;
+display: block;
 }
 nav a:hover {
-  color: var(--magenta);
+color: var(--magenta);
 }
 .button {
-  background-color: var(--magenta);
-  padding: 0.5rem;
-  border-radius: 5px;
+background-color: var(--magenta);
+padding: 0.5rem;
+border-radius: 5px;
 }
 .button:hover {
-  color: var(--white);
+color: var(--white);
 }
 
 /* Style for the Introduction section */
 
 #intro {
-  padding: 4rem 1rem 10rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+padding: 4rem 1rem 10rem 1rem;
+max-width: 1200px;
+margin: 0 auto;
 }
 #intro p {
-  font-size: 1rem;
-  line-height: 1.5;
+font-size: 1rem;
+line-height: 1.5;
 }
 #intro .name {
-  font-family: var(--mono);
+font-family: var(--mono);
 }
 .name span {
-  font-family: var(--sans);
-  font-size: 4rem;
-  color: var(--gold);
-  display: block;
+font-family: var(--sans);
+font-size: 4rem;
+color: var(--gold);
+display: block;
 }
 #intro h2 {
-  font-size: 4rem;
-  font-weight: normal;
+font-size: 4rem;
+font-weight: normal;
+}
+
+/* Style for Projects */
+
+#projects {
+padding: 4rem 1rem;
+}
+#projects h2 {
+font-size: 2.5rem;
+margin-bottom: calc(2.5rem * 1.5);
+}
+#projects h3 {
+color: var(--blue);
+}
+#projects h4 {
+font-size: 1rem;
+font-family: var(--mono);
+margin: 0;
+}
+.black-box {
+background-color: var(--dkblue);
+padding: 1rem;
+border-radius: 10px;
+font-size: 1rem;
+line-height: 1.5;
+}
+#projects ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+gap: 1rem;
+font-size: 1rem;
+}
+#projects img {
+margin: 2rem 0 4rem 0;
+border-left: 2px solid var(--blue);
+border-top: 2px solid var(--blue);
+border-radius: 25px;
+padding: 1rem;
+}
+@media (min-width: 550px) {
+article {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 1rem;
+}
+#projects img {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+.text {
+  grid-column: 5/11;
+  grid-row: 1/2;
+  order: 2;
+  text-align: right;
+}
+#projects ul {
+  justify-content: flex-end;
+}
+#projects .reverse .text {
+  grid-column: 1/7;
+  text-align: left;
+}
+#projects .reverse img {
+  grid-column: 6/11
+}
+#projects .reverse ul {
+  justify-content: flex-start;
+}
 }
 
 /* Style for the Contact bar */
 
 #contact {
-  text-align: center;
-  padding: 1rem;
-  margin: 0 auto;
-  width: 400px;
+text-align: center;
+padding: 1rem;
+margin: 0 auto;
+width: 400px;
 }
 #contact .button {
-    background-color: var(--magenta);
-    padding: 0.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-family: var(--mono);
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: var(--mono);
 }
 
 /* Style for the Footer */
 
 footer {
-  background-color: var(--dkblue);
-  text-align: center;
-  padding: 4rem 0;
+background-color: var(--dkblue);
+text-align: center;
+padding: 4rem 0;
 }
 footer h2 {
-  padding: 1rem;
+padding: 1rem;
 }
 footer ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  font-size: 2rem;
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+font-size: 2rem;
 }
