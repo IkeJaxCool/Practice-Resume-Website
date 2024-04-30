@@ -37,6 +37,16 @@ a:hover {
   text-decoration: none;
 }
 
+/* Background color divs */
+
+.section-blue {
+  background-color: var(--blue);
+}
+.gradient {
+  background: linear-gradient(90deg, rgba(255,193,0,1) 68%, rgba(255,255,255,1) 78%, rgba(255,193,0,1) 88%);
+  height: 2px;
+}
+
 /* Style for the Nav bar */
 
 nav {
@@ -127,10 +137,10 @@ nav a:hover {
 /* Style for the Contact bar */
 
 #contact {
-  background-color: var(--blue);
   text-align: center;
   padding: 1rem;
   margin: 0 auto;
+  width: 400px;
 }
 #contact .button {
     background-color: var(--magenta);
