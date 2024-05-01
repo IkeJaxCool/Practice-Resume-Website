@@ -146,7 +146,9 @@ font-weight: normal;
 /* Style for Projects */
 
 #projects {
-padding: 4rem 1rem;
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem;
 }
 #projects h2 {
 font-size: 2.5rem;
@@ -252,3 +254,48 @@ align-items: center;
 gap: 2rem;
 font-size: 2rem;
 }
+
+/* Style for about.html */
+
+#introduction {
+  background-color: var(--blue);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+#introduction ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+  font-size: 1rem;
+}
+#introduction img {
+  margin: 2rem 0 4rem 0;
+  border-left: 2px solid var(--blue);
+  border-top: 2px solid var(--blue);
+  border-radius: 25px;
+  padding: 1rem;
+  width: 50%;
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+#introduction .text {
+  grid-column: 5/11;
+  grid-row: 1/2;
+}
+#introduction h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+  }
+#introduction h3 {
+  color: var(--lightblue);
+  }
+#introduction h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 0;
+  }
